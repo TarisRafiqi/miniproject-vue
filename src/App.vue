@@ -1,32 +1,34 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-toolbar dark height="50">
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title>Kalkulator BMI</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat to="/">Halaman 1</v-btn>
+        <v-btn flat to="/about">Halaman 2</v-btn>
+        <v-btn flat to="/halamanTiga">Halaman 3</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+
+    <v-content>
+      <router-view/>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import HelloWorld from './components/HelloWorld.vue'
 
-nav {
-  padding: 30px;
-}
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
+  },
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
