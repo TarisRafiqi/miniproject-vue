@@ -64,16 +64,23 @@
         </v-flex>
       </v-layout-column>
     </v-card>
+    
     <div>
-      
+      <Information/>
   </div>
 </div>
 
 </template>
 
 <script>
+import Information from '../components/Information'
+
   export default {
     name: 'HomeView',
+    components: {
+      Information
+    },
+
     data() { 
       return {
         usia: '',
@@ -84,10 +91,6 @@
         kondisi: ''
         
       }
-    },
-
-    computed: {
-      
     },
 
     methods: {
