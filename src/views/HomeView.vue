@@ -64,7 +64,7 @@
         </v-flex>
       </v-layout-column>
     </v-card>
-    
+
     <div>
       <Information/>
   </div>
@@ -104,10 +104,10 @@ import Information from '../components/Information'
         return this.kondisi = ' Nilai IMT ( Index Masa Tubuh ) / BMI (Body Mass Index) di bawah 18,5 menandakan berat badan Anda kurang (underweight). Status anda adalah "Kekurangan Berat Badan"'
       } 
       else if (this.bmi >= 18.5 && this.bmi < 25) {
-        return this.kondisi = ' Status anda adalah "Berat Badan Normal"'
+        return this.kondisi = ' Jika nilai indeks massa tubuh Anda 18.5 sampai 24.9, artinya Anda memiliki berat badan normal.Status anda adalah "Berat Badan Normal"'
       }
       else if (this.bmi >= 25 && this.bmi < 30) {
-        return this.kondisi = ' Status anda adalah "Kelebihan Berat Badan"'
+        return this.kondisi = ' Anda dianggap memiliki kelebihan berat badan, jika indeks massa tubuh (BMI) mencapai 25.0 — 29.9. Status anda adalah "Kelebihan Berat Badan"'
       }
       else if (this.bmi > 29.9) {
         return this.kondisi = ' Status anda adalah "Kegemukan (Obesitas)"'
