@@ -64,15 +64,10 @@
         </v-flex>
       </v-layout-column>
     </v-card>
-
     <div>
-      <template>
-  <v-expansion-panels>
-    <v-expansion-panel
-      v-for="(item,i) in 5"
-      :key="i"
-    >
-  
+      
+  </div>
+</div>
 
 </template>
 
@@ -81,14 +76,18 @@
     name: 'HomeView',
     data() { 
       return {
-        // jenisKelamin: '',
         usia: '',
         tinggiBadan: '',
         beratBadan: '',
         bmi: '',
         titleBMI: 'Hitung BMI Anda',
-        kondisi: '',
+        kondisi: ''
+        
       }
+    },
+
+    computed: {
+      
     },
 
     methods: {
