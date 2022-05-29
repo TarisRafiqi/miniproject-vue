@@ -1,5 +1,5 @@
 <template>
   <div class="halamanTiga">
-    <h1>Ini Adalah Halaman 3</h1>
+    <h1 class="text-center">Halaman 3 Coming Soon</h1>
   </div>
 </template>
